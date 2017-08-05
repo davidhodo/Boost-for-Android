@@ -263,6 +263,11 @@ case "$NDK_RN" in
 		CXXPATH=$ANDROID_STANDALONE_TOOLCHAIN/bin/clang++
 		TOOLSET=clang-androidR14b
 		;;
+	"15b")
+		TOOLCHAIN=${TOOLCHAIN:-llvm}
+		CXXPATH=$ANDROID_STANDALONE_TOOLCHAIN/bin/clang++
+		TOOLSET=clang-androidR15b
+		;;
 	*)
 		echo "Undefined or not supported Android NDK version!"
 		exit 1

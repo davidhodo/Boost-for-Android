@@ -41,7 +41,7 @@ import os ;
 local AndroidNDKRoot = [ os.environ AndroidNDKRoot ] ;
 
 # --------------------------------------------------------------------
-using clang : androidR14b
+using clang : androidR15b
 :
 clang++
 :
@@ -49,7 +49,7 @@ clang++
 #<cxxflags>-std=c++11
 ;
 # --------------------------------------------------------------------
-#using gcc : androidR14b
+#using gcc : androidR15b
 #:
 ##$(AndroidNDKRoot)/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
 #arm-linux-androideabi-g++
